@@ -1,3 +1,13 @@
+<?php
+include "includes/config.php";
+
+if (isset($_SESSION['userLoggedIn'])) {
+    $userLoggedIn = $_SESSION['userLoggedIn'];
+} else {
+    header("Location: register.php");
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,12 +17,6 @@
     <title>Musik</title>
 </head>
 <body>
-    <div id="inputContainer">
-        <form id="loginForm" action="register.php" method="POST">
-            <h2>Login to your account</h2>
-            <input id="loginUsername" name="loginUsername" type="text">
-        </form>
-    </div>
-
+    <h1>Home Page</h1>
 </body>
 </html>
