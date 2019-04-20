@@ -1,5 +1,4 @@
 <?php
- if (isset($_POST['loginButton'])) {
+if (isset($_POST['loginButton'])) {
     // Login Button was Pressed
-  }
-?>
+}
