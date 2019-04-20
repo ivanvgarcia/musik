@@ -1,0 +1,181 @@
+html {
+    font-size: 62.5%;
+}
+
+
+body {
+    font-size: 1.6rem;
+}
+
+html,
+body {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+
+h2 {
+    margin: 0;
+}
+
+#background {
+    background: linear-gradient(rgba(39, 39, 39, 0.931),
+        rgba(209, 14, 14, 0.178)), url('../images/register_bg-min.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+#loginContainer * {
+    color: #fff;
+    font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    font-weight: normal;
+    line-height: 2em;
+    box-sizing: border-box;
+}
+
+#loginContainer {
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+    max-width: 1224px;
+}
+
+::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #e4e4e4b4;
+    font-style: italic;
+    opacity: 1;
+    /* Firefox */
+}
+
+:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: #e4e4e4b4;
+    font-style: italic;
+
+    ;
+}
+
+::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: #e4e4e4b4;
+    font-style: italic;
+}
+
+#inputContainer {
+    width: 400px;
+    padding: 45px;
+    border-right: 1px solid #999;
+}
+
+#inputContainer h2 {
+    text-align: center;
+}
+
+#inputContainer input[type="text"],
+#inputContainer input[type="email"],
+#inputContainer input[type="password"] {
+    display: block;
+    background: transparent;
+    border: 0;
+    border-bottom: 1px solid #fff;
+    height: 27px;
+    line-height: 27px;
+    width: 100%;
+}
+
+#inputContainer input:focus {
+    border-bottom: 2px solid #00e1ff;
+}
+
+#inputContainer label {
+    color: #e6e6e6;
+    font-size: 1.5rem;
+    display: block;
+    margin-top: 15px;
+}
+
+#inputContainer button {
+    background: transparent;
+    border: 2px solid #fff;
+    border-radius: 250px;
+    width: 100%;
+    padding: .5em;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    letter-spacing: 1px;
+    margin: 20px auto;
+    cursor: pointer;
+}
+
+.hasAccountText span {
+    font-weight: bold;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.hasAccountText span:hover {
+    text-decoration: underline;
+
+}
+
+.hasAccountText {
+    text-align: center;
+}
+
+#loginForm {
+    display: none;
+}
+
+#loginText {
+    padding: 4.5rem;
+}
+
+#loginText h1 {
+    color: #00e1ff;
+    font-size: 6rem;
+    font-weight: bold;
+    line-height: 1em;
+}
+
+#loginText h2 {
+    font-size: 3rem;
+    margin: 35px 0;
+}
+
+#loginText ul {
+    padding: 0;
+}
+
+#loginText li {
+    font-size: 2rem;
+    list-style-type: none;
+    padding: 5px 60px;
+
+}
+
+.artist {
+    background: url(../images/icons/artist.png);
+    background-repeat: no-repeat;
+}
+
+.playlist {
+    background: url(../images/icons/playlist.png);
+    background-repeat: no-repeat;
+}
+
+.follow {
+    background: url(../images/icons/follow.png);
+    background-repeat: no-repeat;
+}
+
+#inputContainer .errorMessage {
+    color: #ff0000;
+    font-size: 1.2rem;
+    display: block;
+    text-transform: uppercase;
+
+}
