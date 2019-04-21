@@ -6,6 +6,8 @@ html {
 
 body {
     font-size: 1.6rem;
+    background: #69140e;
+    min-width: 720px;
 }
 
 * {
@@ -168,4 +170,74 @@ body {
 #topContainer {
     min-height: 100%;
     width: 100%;
+}
+
+#navBarContainer {
+    background: #3c1518;
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.navBar {
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.navBarLogo {
+    transition: transform .2s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.navBarLogo span {
+    color: #eb5e55;
+    font-size: 3rem;
+    font-weight: bold;
+    text-shadow: 0 1px 1px #fff;
+}
+
+.navBarLogo a {
+    text-decoration: none;
+}
+
+.navBarLogo:hover {
+    transform: rotate(5deg);
+}
+
+.group {
+    padding: 10px 0;
+}
+
+.navItem {
+    padding: 8px 0;
+    font-size: 1.6rem;
+    font-weight: bold;
+    display: block;
+    letter-spacing: .1rem;
+    position: relative;
+}
+
+.navItemLink {
+    color: #eb5e55;
+    text-decoration: none;
+    transition: all .2s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+
+.navItemLink:hover {
+    opacity: .8;
+}
+
+.navItemLink .icon {
+    position: absolute;
+    top: 3px;
+    right: 0;
+    width: 25px;
 }
