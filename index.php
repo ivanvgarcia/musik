@@ -22,4 +22,3 @@ while ($row = mysqli_fetch_array($albumQuery)) {
 ?>
 </div>
 
-<?php include "includes/footer.php";?>
